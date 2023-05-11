@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <nav>
         <span class="logo">
+            ON-Tech
             <!-- <img src="./image/logo/Beztytułu.png" alt=""> -->
         </span>
         <ul>
@@ -25,14 +26,39 @@
               <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
             </svg>
         </button>
-    </header>
+    </nav>
+    <div class="container" id="HOME"></div>
+    <div class="classic-container" id="CLASSIC">
+            <h2 class="section-tag">CLASSIC</h2>
+        <div class="products">
+            <img src="./image/classic/Classic.jpg" class="photo" alt="huj">
+            <img src="./image/classic/Parapet_Classic.jpg" class="photo">
+        </div>
+        <h2 class="section-tag">Zaślepki</h2>
+        <div class="slider">
+            <img src="./image/classic/fasteners/Warstwa 10.png">
+            <img src="./image/classic/fasteners/Warstwa 3.png">
+            <img src="./image/classic/fasteners/Warstwa 4.png">
+            <img src="./image/classic/fasteners/Warstwa 5.png">
+            <img src="./image/classic/fasteners/Warstwa 6.png">
+            <img src="./image/classic/fasteners/Warstwa 7.png">
+            <img src="./image/classic/fasteners/Warstwa 8.png">
+            <img src="./image/classic/fasteners/Warstwa 9.png">
+        </div>
+    </div>
     <div class="hamburger-menu">
         <ul>
-            <li class="mark"><a href="#container">HOME</a></li>
-            <li class="mark"><a href="#products-container">PRODUKTY</a></li>
+            <li class="mark"><a href="#HOME">HOME</a></li>
+            <li class="mark"><a href="#CLASSIC">CLASSIC</a></li>
+            <li class="mark"><a href="#">SOFT LINE</a></li>
             <li class="mark"><a href="#container">KONTAKT</a></li>
         </ul>
     </div>
     <script src="main.js"></script>
+    <script>
+        window.addEventListener('resize', (e) => {
+            console.log(document.querySelector('.slider').offsetWidth);
+        })
+    </script>
 </body>
 </html>
