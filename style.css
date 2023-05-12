@@ -18,9 +18,14 @@ html {
 }
 
 .container{
-    height: 100vh;
     width: 100%;
-    background: url("./image/background/959dab9ab97b3d3011121fcd3300f861.jpg");
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../image/background/modern-urban-interior-design-scaled.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav{
@@ -155,7 +160,7 @@ nav ul li:hover::after{
     color: #f44336;
 }
 
-.classic-container{
+.classic-container, .soft-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,42 +184,9 @@ nav ul li:hover::after{
     max-width: 500px;
 }
 
-.photo:hover{
-    transform: translateY(-10px);
-}
-
 .section-tag{
     font-size: 50px;
     letter-spacing: 3px;
-}
-
-@media only screen and (min-width: 1300px) {
-    .menu {
-      display: none;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .section-tag{
-        font-size: 40px;
-    }
-}
-
-@media only screen and (max-width: 720px) {
-    .section-tag{
-        font-size: 30px;
-    }
-    .classic-container {
-        padding: 35px 35px 60px 35px;
-        gap: 35px;
-    }
-}
-
-
-@media only screen and (max-width: 1300px) {
-    nav ul{
-        display: none;
-    }
 }
 
 .slider{
@@ -224,10 +196,12 @@ nav ul li:hover::after{
     overflow: auto;
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
+    background: #dedede;
 }
 
 .slider img {
     width: 100%;
+    transform: translateY(-5%);
 }
 
 /* SCROLL */
@@ -252,4 +226,226 @@ nav ul li:hover::after{
 
 ::-webkit-scrollbar {
     background: #2C2C2C;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    gap: 80px;
+    background: #29343b;
+}
+
+.vertical-line {
+    width: 3px;
+    height: 350px;
+    background: #f44336;
+    border-radius: 4px;
+}
+
+.quote-text {
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+}
+
+.quote-firm{
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 40%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+  
+.inf {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.email, .call {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+  
+.fa-solid {
+    font-size: 30px;
+}
+  
+.email i, .call i {
+    color: #f44336;
+}
+  
+.email, .call {
+    font-size: 32px;
+}
+  
+
+.form-container h2 {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+  
+  .form-container h2 {
+    margin-top: 0;
+  }
+  
+  .form-container #contactform {
+    padding: 0;
+    max-width: 800px;
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-container input[type="text"]:focus,
+  .form-container input[type="email"]:focus,
+  .form-container textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+  
+  /* Stylowanie przycisku submit */
+  .form-container input[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-container input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .form-container input[type="submit"]:focus {
+    outline: none;
+  }
+  
+  .form-container input[name="_formsubmit_id"] {
+    display: none;
+  }
+  
+  .form-container textarea[name="comment"] {
+    resize: none;
+    max-height: 120px;
+  }
+  
+
+.photos-container#classic {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    width: 100%;
+}
+
+.photos-container#soft {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+.photos-container img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    background-color: whitesmoke;
+}
+
+
+.photos-container img {
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    transition: all 0.3s;
+    max-width: 235px;
+    min-width: 150px;
+    flex-basis: 50%;
+} 
+
+.photo:hover, .photos-container img:hover{
+    transform: translateY(-10px);
+}
+
+.form-text {
+    text-align: center;
+    transform: translateY(10%);
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transform: translateY(0%);
+}
+
+@media only screen and (min-width: 1300px) {
+    .menu {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .section-tag{
+        font-size: 40px;
+    }
+    .email, .call {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .section-tag{
+        font-size: 30px;
+    }
+    .classic-container, .soft-container {
+        padding: 35px 35px 60px 35px;
+        gap: 35px;
+    }
+    .photos-container, .form-container {
+        gap: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+    nav ul{
+        display: none;
+    }
 }

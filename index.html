@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -45,6 +46,62 @@
             <img src="./image/classic/fasteners/Warstwa 8.png">
             <img src="./image/classic/fasteners/Warstwa 9.png">
         </div>
+        <h2 class="section-tag">Łączniki</h2>
+        <div class="photos-container" id="classic">
+            <img src="./image/classic/plugs/Warstwa 1.png">
+            <img src="./image/classic/plugs/Warstwa 2.png">
+        </div>
+    </div>
+    <div class="soft-container" id="CLASSIC">
+        <h2 class="section-tag">SOFT LINE</h2>
+        <div class="products">
+            <img src="./image/classic/Classic.jpg" class="photo" alt="huj">
+            <img src="./image/classic/Parapet_Classic.jpg" class="photo">
+        </div>
+        <h2 class="section-tag">Zaślepki</h2>
+        <div class="slider">
+            <img src="./image/soft line/fasteners/Warstwa 1.png">
+            <img src="./image/soft line/fasteners/Warstwa 2.png">
+            <img src="./image/soft line/fasteners/Warstwa 3.png">
+            <img src="./image/soft line/fasteners/Warstwa 4.png">
+        </div>
+        <h2 class="section-tag">Łączniki</h2>
+        <div class="photos-container" id="soft">
+            <img src="./image/soft line/plugs/Warstwa 1.png">
+            <img src="./image/soft line/plugs/Warstwa 2.png">
+            <img src="./image/soft line/plugs/Warstwa 3.png">
+            <img src="./image/soft line/plugs/Warstwa 4.png">
+        </div>
+    </div>
+    <div class="form-container">
+        <div class="left">
+            <h2>Poproś o bezpłatną wycenę</h2>
+            <form id="contactform" action="
+            https://formsubmit.io/send/put your email here"
+                method="POST">
+                <input name="name" type="text" id="name" placeholder="Imię">
+                <input name="email" type="email" id="email" placeholder="email">
+                <textarea name="comment" id="comment" rows="3" 
+                    placeholder="wiadomość"></textarea>
+        
+                <input name="_formsubmit_id" type="text" style="display:none">
+        
+            <input value="Submit" type="submit">
+            </form>        
+        </div>
+        <div class="vertical-line"></div>
+        <div class="right">
+            <div class="inf">
+                <span class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    biuro@on-tech.net.pl
+                </span>
+                <span class="call">
+                    <i class="fa-solid fa-phone"></i>
+                    +48 602 366 104
+                </span>
+            </div>
+        </div>
     </div>
     <div class="hamburger-menu">
         <ul>
@@ -54,11 +111,5 @@
             <li class="mark"><a href="#container">KONTAKT</a></li>
         </ul>
     </div>
-    <script src="main.js"></script>
-    <script>
-        window.addEventListener('resize', (e) => {
-            console.log(document.querySelector('.slider').offsetWidth);
-        })
-    </script>
 </body>
 </html>
