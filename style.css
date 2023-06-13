@@ -19,13 +19,51 @@ html {
 
 .container{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../image/background/modern-urban-interior-design-scaled.jpeg);
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.description{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 3px;
+    transform: translateY(-12%);
+    padding: 30px;
+}
+
+.about-container{
+    background: #29343b;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    color: whitesmoke;
+}
+
+.about-container header {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.about-container h3 {
+    font-size: 25px;
+}
+
+.about-container p {
+    letter-spacing: 2px;
 }
 
 nav{
@@ -312,7 +350,6 @@ nav ul li:hover::after{
   
   .form-container #contactform {
     padding: 0;
-    max-width: 800px;
   }
   
   .form-container input[type="text"],
@@ -378,15 +415,11 @@ nav ul li:hover::after{
     width: 100%;
 }
 
-.photos-container#soft {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-}
-
 .photos-container img {
-    width: 250px;
-    height: 250px;
+    width: 50%;
+    height: 50%;
+    max-width: 250px;
+    max-height: 250px;
     object-fit: cover;
     background-color: whitesmoke;
 }
@@ -421,12 +454,34 @@ nav ul li:hover::after{
     }
 }
 
+@media only screen and (max-width: 940px) {
+    .form-container {
+        flex-direction: column;
+    }
+    .vertical-line {
+        height: 3px;
+        width: 100%;
+    }
+    .left {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .section-tag{
         font-size: 40px;
     }
     .email, .call {
         font-size: 25px;
+    }
+    .form-container {
+        gap: 60px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .photos-container#classic {
+        gap: 15px;
     }
 }
 
@@ -441,6 +496,9 @@ nav ul li:hover::after{
     .photos-container, .form-container {
         gap: 15px;
     }
+    .photos-container#classic {
+        gap: 40px;
+    }
 }
 
 
@@ -448,4 +506,10 @@ nav ul li:hover::after{
     nav ul{
         display: none;
     }
+}
+
+.section-separator {
+    border: none;
+    border-top: 5px solid #f44336;
+    margin: 20px 0;
 }

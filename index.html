@@ -15,10 +15,10 @@
             <!-- <img src="./image/logo/Beztytułu.png" alt=""> -->
         </span>
         <ul>
-            <li class="mark">HOME</li>
-            <li class="mark">CLASSIC</li>
-            <li class="mark">SOFT LINE</li>
-            <li class="mark">KONTAKT</li>
+            <li class="mark"><a href="#HOME">HOME</a></li>
+            <li class="mark"><a href="#CLASSIC">CLASSIC</a></li>
+            <li class="mark"><a href="#SOFT-LINE">SOFT LINE</a></li>
+            <li class="mark"><a href="#CONTACT">KONTAKT</a></li>
         </ul>
         <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
             <svg width="100" height="100" viewBox="0 0 100 100">
@@ -28,11 +28,16 @@
             </svg>
         </button>
     </nav>
-    <div class="container" id="HOME"></div>
+    <div class="container" id="HOME">
+        <div class="description">
+            <h1>Parapety aluminiowe <br> zewnętrzne</h1>
+            <h2>Dystrybutor parapetów firmy Aluron</h2>
+        </div>
+    </div>
     <div class="classic-container" id="CLASSIC">
             <h2 class="section-tag">CLASSIC</h2>
         <div class="products">
-            <img src="./image/classic/Classic.jpg" class="photo" alt="huj">
+            <img src="./image/classic/Classic.jpg" class="photo" alt="">
             <img src="./image/classic/Parapet_Classic.jpg" class="photo">
         </div>
         <h2 class="section-tag">Zaślepki</h2>
@@ -52,7 +57,8 @@
             <img src="./image/classic/plugs/Warstwa 2.png">
         </div>
     </div>
-    <div class="soft-container" id="CLASSIC">
+    <hr class="section-separator">
+    <div class="soft-container" id="SOFT-LINE">
         <h2 class="section-tag">SOFT LINE</h2>
         <div class="products">
             <img src="./image/classic/Classic.jpg" class="photo" alt="huj">
@@ -66,18 +72,18 @@
             <img src="./image/soft line/fasteners/Warstwa 4.png">
         </div>
         <h2 class="section-tag">Łączniki</h2>
-        <div class="photos-container" id="soft">
+        <div class="slider">
             <img src="./image/soft line/plugs/Warstwa 1.png">
             <img src="./image/soft line/plugs/Warstwa 2.png">
             <img src="./image/soft line/plugs/Warstwa 3.png">
             <img src="./image/soft line/plugs/Warstwa 4.png">
-        </div>
+        </div>          
     </div>
-    <div class="form-container">
+    <div class="form-container" id="CONTACT">
         <div class="left">
             <h2>Poproś o bezpłatną wycenę</h2>
             <form id="contactform" action="
-            https://formsubmit.io/send/put your email here"
+            https://formsubmit.io/send/biuro@on-tech.net.pl"
                 method="POST">
                 <input name="name" type="text" id="name" placeholder="Imię">
                 <input name="email" type="email" id="email" placeholder="email">
@@ -107,9 +113,10 @@
         <ul>
             <li class="mark"><a href="#HOME">HOME</a></li>
             <li class="mark"><a href="#CLASSIC">CLASSIC</a></li>
-            <li class="mark"><a href="#">SOFT LINE</a></li>
-            <li class="mark"><a href="#container">KONTAKT</a></li>
+            <li class="mark"><a href="#SOFT-LINE">SOFT LINE</a></li>
+            <li class="mark"><a href="#CONTACT">KONTAKT</a></li>
         </ul>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
