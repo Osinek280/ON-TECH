@@ -43,6 +43,7 @@ html {
     letter-spacing: 3px;
     transform: translateY(-12%);
     padding: 30px;
+    max-height: 90vh !important;
 }
 
 .about-container{
